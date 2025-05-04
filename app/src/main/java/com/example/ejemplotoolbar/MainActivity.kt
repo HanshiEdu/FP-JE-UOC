@@ -275,6 +275,7 @@ fun CaptureComposable(
                     Log.d("CaptureDebug", "Imagen capturada, tamaño: ${bitmap.width}x${bitmap.height}")
                     captureController.bitmap = bitmap
                     captureController.requestCapture = false
+
                     onCaptured(bitmap)
                 }
             }else{
